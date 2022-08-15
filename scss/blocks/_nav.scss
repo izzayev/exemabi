@@ -1,0 +1,23 @@
+.nav{
+    display: flex;
+    flex-wrap: wrap;
+    width: 249px;
+    align-items: center;
+
+    .nav__list{
+        @include reset-list;
+        display: flex;
+        gap: 32px;
+
+        .nav__list-item{
+
+            .nav__link{
+                @include a-style;
+                
+                &:hover{
+                    color: #FCB72B;
+                }
+            }
+        }
+    }
+}
